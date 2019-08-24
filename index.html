@@ -4,10 +4,10 @@
 <html>
     <head>
 
-      <!-- ACTION - insert a title -->
+      <!-- ACTION - insert a title with no spaces (use _) -->
       <title>assimilate_kit</title>
 
-      <!-- do not modify BELOW tags -->
+      <!-- script tags start - do not modify -->
          <meta charset="utf-8">
 	       <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
@@ -18,48 +18,45 @@
          <script src="https://cdn.jsdelivr.net/gh/assimilate-interactive/akit/lib/js/platform/arjs/threex-artoolkitcontext.js"></script>
          <script src="https://cdn.jsdelivr.net/gh/assimilate-interactive/akit/akit-frame.js" type="text/javascript"></script>
          <script type="text/javascript" src="app.js"></script>
-      <!-- do not modify ABOVE tags -->
+      <!-- script tags end -->
 
      </head>
 
      <body>
+       <!--init tags - do not modify -->
        <script>akit.init()</script>
-       <!-- do not modify BELOW tags -->
-
-
        <div id="appscene"></div>
+        <!-- init tags end -->
 
 
-         <!-- do not modify ABOVE tags -->
-
-         <!-- ACTION - aframe scene -->
+         <!-- aframe scene start -->
          <a-scene akit='platform: arjs;'>
 
-           <!-- ACTION - aframe XR akit assets -->
+             <!-- ACTION - aframe assets - add here -->
              <a-assets>
-              <!--  <akit-asset-item name="scene" group="group1" dir="sonic_the_hedgehog" marker="1" filetype="gltf" title="sonic_the_hedgehog" desc="sonic_the_hedgehog"></akit-asset-item> -->
-              <!--  <akit-asset-item name="scene" group="group1" dir="toaster1" marker="1" filetype="gltf" title="toaster1" desc="toaster1"></akit-asset-item>
--->
-             <!--    <a-asset-item id="akit-item" group="group1" name="obj1"></a-asset-item>-->
-              <!--  <a-asset-kit></a-asset-kit> -->
+                <!--  <akit-asset-item name="scene" group="group1" dir="sonic_the_hedgehog" marker="1" filetype="gltf" title="sonic_the_hedgehog" desc="sonic_the_hedgehog"></akit-asset-item> -->
+                <!--  <akit-asset-item name="scene" group="group1" dir="toaster1" marker="1" filetype="gltf" title="toaster1" desc="toaster1"></akit-asset-item>
+  -->
+               <!--    <a-asset-item id="akit-item" group="group1" name="obj1"></a-asset-item>-->
+                <!--  <a-asset-kit></a-asset-kit> -->
              </a-assets>
 
-         <!-- ACTION - aframe static assets -->
+             <a-anchor name="test" group="test" marker="1">
 
-           <a-anchor name="test" group="test" marker="1">
-             <!-- akit object -->
-       			<!-- Add your augmented reality here -->
-       			<a-box position='0 0 0' material='opacity: 0.5; side:double; color:red;'>
-       				<a-torus-knot radius='0.26' radius-tubular='0.05'
-       				animation="property: rotation; to:360 0 0; dur: 5000; easing: linear; loop: true">
-       				</a-torus-knot>
-       			</a-box>
-       		</a-anchor>
+         		 <!-- ACTION - add aframe here-->
 
+         			<a-box position='0 0 0' material='opacity: 0.5; side:double; color:red;'>
+         				<a-torus-knot radius='0.26' radius-tubular='0.05'
+         				animation="property: rotation; to:360 0 0; dur: 5000; easing: linear; loop: true">
+         				</a-torus-knot>
+         			</a-box>
+
+
+
+         		</a-anchor>
 
        </a-scene>
-       <!-- end aframe scene-->
-
+       <!-- aframe scene end-->
 
      </body>
 
