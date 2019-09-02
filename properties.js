@@ -1,6 +1,6 @@
 
 
-AKIT_PROPS = {
+window.AKIT_PROPS = {
 
   ///////////////////////////////////////////////////////////basic
   platform: 'arjs',
@@ -11,13 +11,16 @@ AKIT_PROPS = {
 
   },
 
-
   arjs: {
-
     cameraParametersUrl: '/assets/platform/arjs/camera_para.dat',
-  //  patternUrl: APP.markerDirectory,
-
   },
 
+  markers: [
+
+      { name: '1',url:'' },
+      { name: '2',url:'' },
+      //   { name: 'your_marker_name', url:'copy_from_assets' },
+
+  ]
 
 }
